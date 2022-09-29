@@ -8,7 +8,8 @@ const word_scrambler = (str) => {
     for (let i = 0; i < len; i++) {
         let random = Math.floor (Math.random() * len);
         let removedLetter = str[random];
-        console.log(removedLetter);
+        scrambleValue = scrambleValue + removedLetter;
     }
+    console.log(scrambleValue)
 };
  word_scrambler('this is a word');
