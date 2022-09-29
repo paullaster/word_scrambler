@@ -4,10 +4,13 @@
  */
 const word_scrambler = (str) => {
     let len = str.length;
-    let scrambleValue;
+    let scrambleValue = '';
     for (let i = 0; i < len; i++) {
         let random = Math.floor (Math.random() * len);
         let removedLetter = str[random];
+        if (removedLetter === ' '){
+            continue;
+        }
         scrambleValue = scrambleValue + removedLetter;
     }
     console.log(scrambleValue)
