@@ -4,6 +4,10 @@
  */
 const word_scrambler = (str) => {
     let len = str.length;
-    console.log(len);
+    let scrambleValue;
+    for (let i = 0; i < len; i++) {
+        let random = Math.floor (Math.random() * len);
+        console.log(random);
+    }
 };
  word_scrambler('this is a word');
