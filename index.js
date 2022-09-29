@@ -12,6 +12,8 @@ const word_scrambler = (str) => {
             continue;
         }
         scrambleValue = scrambleValue + removedLetter;
+        console.log ('Old string: ' + str + ', new string: ' + scrambleValue);
+        len--;
     }
     console.log(scrambleValue)
 };
